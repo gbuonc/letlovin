@@ -1,0 +1,295 @@
+/* struttura 
+====================================================== */
+html {
+   -webkit-text-size-adjust: none;
+   background: #fff url('../img/bg.jpg') fixed top right no-repeat;
+   background-size:cover;
+}
+body{
+   background-color: transparent;
+   background: transparent;   
+   font-size: 18px;   
+   text-shadow: 1px 1px 1px #efefef, 0px 0px 2px #efefef, 0px 0px 6px #efefef, 0px 0px 12px #e2e7eb,0px 0px 2px #f2f2f2,0px 0px 20px #fff;
+   text-shadow: 1px 1px 0px #efefef, 0px 0px 2px #efefef, 0px 0px 3px #efefef;	
+}
+
+h1{text-shadow:none; margin-bottom: 0px;}
+h2{text-shadow:1px 1px #ddd; margin-bottom: 20px;}
+
+.fading{
+   /*-webkit-transition: opacity 300ms ease-in-out;
+     -moz-transition: opacity 300ms ease-in-out;
+     -o-transition: opacity 300ms ease-in-out;
+     transition: opacity 300ms ease-in-out;*/
+}
+
+
+/* Reset from base
+====================================================== */
+#main-wrap{
+   padding: 0px; 
+}
+.show-more, 
+.hide-more {display: none;}
+.more{   display: block;}
+
+section{
+   opacity: 0;
+   position: relative;
+   padding: 50px 30% 30px 50px;
+   margin: 0;
+   box-shadow:none;
+}
+#events:after,
+#feed:after,
+#music:after,
+#booking:after{
+   content: none;   
+}
+.no-mobile{
+   display:inline-block;
+}
+
+.btn {
+   text-shadow: 1px 1px 1px #8b827c;
+}
+
+.boxed{
+   background-color: rgba(255,255,255,0.7);
+   padding: 15px;   
+   box-shadow: 0 4px 6px -4px #ccc;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #efefef;
+	text-shadow:none;
+}
+
+/* HEADER
+====================================================== */
+#header-nav{
+   position: relative;
+   text-shadow:none;
+}
+.animated{
+   -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+header{
+   position: absolute;
+   top:  30%;
+   left:20px;
+   width:60%;
+   background-color: rgba(255,255,255,0.7);
+   padding: 30px 30px 30px 10px;
+   text-align: right;
+}
+
+nav, nav.closed {
+   display: inline-block;
+   top: 145px;
+   left: auto;
+   right: 30px;
+   padding: 0 15px 0 15px;
+   text-align: left;
+   white-space: nowrap;
+}
+nav.closed {
+-webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+nav:after{display: none;}
+nav a{
+   color: #fff;
+   display: inline-block;
+   width: auto;
+   height: auto;
+   text-decoration: none;
+}
+nav li{
+   display: inline-block;
+   font-weight: normal;
+   padding: 0 5px;
+   line-height: 45px;
+   font-size: 14px;
+   font-weight: normal;
+   border-bottom: none;
+   border-top: none;
+}
+nav li.active{
+   border-bottom: 5px solid #ba433d;
+   background-color: #8b827c;
+}
+nav.fixed{
+   position: fixed;
+   top:  0;
+   right:0;
+   left:0;
+   bottom: auto;   
+   box-shadow: 0 8px 15px -12px #444, 0 8px 15px -12px #444, 0 8px 15px -12px #444, 0 8px 15px -12px #444;
+}
+nav.fixed #backHome{
+   position: absolute;
+   right:30px;
+   top:0;
+   display: block;
+}
+.claim{
+   width: 100%;
+   font-size: 16px;
+   line-height: 1;
+   text-align: right;
+   position: relative;
+   top:-10px;
+}
+/* About
+====================================================== */
+#about p{
+   font-size: 16px;
+   line-height: 22px;
+   display: block;
+   background-color: transparent;
+}
+#about p.boxed {
+   display: block;
+   width: 35%;
+   float: left;
+   position: relative;
+   margin-top:25px;
+   background-color: transparent;
+   padding: 15px;
+   margin-right: 15px;
+   margin-bottom: 15px;
+   font-size: 18px;
+   line-height: 1.7;
+   box-shadow: none;	
+	border: none;
+	color: #8b827c;
+}
+#about p.boxed strong{
+   display: block;
+   margin-top: 10px;
+	color: #444;
+}
+/* 
+
+/* Events
+====================================================== */
+.basicList li{
+/*
+   max-width:50%;
+   float:left;
+*/
+   margin-left:10px;
+   padding:15px 15px 15px 30px;   
+   font-size: 14px;
+   background-color: rgba(255,255,255,0.7);
+}
+.direction{
+    font-weight: normal;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border:1px solid #ddd;
+    border-radius: 4px;
+    padding:4px;
+    background:#efefef;
+    color:#ba433d;
+    text-decoration: none;
+}
+/* Feeds		
+====================================================== */
+#feed .basicList li{
+   width:25%;
+   overflow: hidden;
+}
+.basicList li .ico {
+   top: 13px;
+}
+
+/* mUSIC
+====================================================== */
+/*#music{
+   margin-bottom: 400px;
+}*/
+	
+/* Booking
+====================================================== */
+.screen-wood{   
+   background: #000 url('../img/bg_wood.jpg');
+   box-shadow: inset 0 8px 15px -12px #000, inset 0 8px 15px -12px #000, inset 0 8px 15px -12px #000, inset 0 8px 15px -12px #000, inset 0 8px 15px -12px #000, inset 0 8px 15px -12px #000, inset 0 8px 15px -12px #000, inset 0 8px 15px -12px #000;
+}
+#booking{
+   color: #fff;
+   text-shadow: 0px 1px 1px #4d4d4d;
+   padding-top: 80px;
+}
+#booking h2{
+   opacity:0.7;
+   text-shadow: 0px 1px 1px #454545;
+}
+#booking a{
+   color: #fff;
+}
+/* Social
+====================================================== */
+#social{
+   min-height:0;
+   padding: 20px;
+   background: rgba(0,0,0,0.5);
+   box-shadow: 0 -8px 15px -12px #000, 0 -8px 15px -12px #000, 0 -8px 15px -12px #000, 0 -8px 15px -12px #000, 0 -8px 15px -12px #000, 0 -8px 15px -12px #000, 0 -8px 15px -12px #000, 0 -8px 15px -12px #000;
+   text-shadow:none;
+}
+#social h3{
+   color: #fff;
+   float: left;
+   margin: 0 20px 0 0;
+   line-height: 30px;
+   text-shadow: none;
+}
+.socialList{
+   margin-bottom: 0px;
+}
+.btn-true:hover{background: rgba(180, 200, 110, 1);}
+.btn-fb:hover{background: rgba(60, 90, 150, 1);}
+.btn-rn:hover{background: rgba(151, 151, 151, 1);}
+.btn-yt:hover{background: rgba(203, 50, 44, 1);}
+#fbLikeBtn{
+   position: absolute;
+   top:21px;
+   left:auto;
+   right:30px;
+}
+
+
+
+/* Media fixes for ipad
+====================================================== */
+
+@media screen and (max-width: 1024px){   
+   section{
+      padding: 80px 24% 80px 20px;
+   }
+}
+@media screen and (max-width: 768px){
+   section{
+      padding: 80px 24% 80px 10px;
+   }
+   #feed .basicList li{
+      width:22%;
+      overflow: hidden;
+   }
+}
+@media screen and (max-device-width: 1024px){      
+   .positionfixed #fixed-bg{
+      position: fixed;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: #d0d6d4 url('../img/bg.jpg') fixed top right no-repeat;
+      background-size:100% auto;
+   }
+}
