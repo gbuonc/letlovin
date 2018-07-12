@@ -21,9 +21,9 @@
          display: flex;
          justify-content: center;
          align-items: center;
-         background-size: cover; 
+         /* background-size: cover; 
          background-position: 50%; 
-         background-image: url(../static/lwr-bg.jpg);
+         background-image: url(../static/lwr-bg.jpg); */
       }
       .wrap{
          width: 100%;
@@ -38,7 +38,7 @@
          justify-content: center; align-items: center;
          background-size: cover; background-position: 50%;
       }
-      .bg{ transform:scale(1)}
+ .bg{ transform:scale(1); background-image: url(../static/lwr-bg.jpg);}
       /* .middle{background-image: url(../static/lwr-bg.jpg);} */
       .front{background-image: url(../static/lwr-max.png);transform: translateZ(150px)}
       .lwr.lwr{
@@ -75,16 +75,16 @@
 <body>
    <div class="layout" >
       <div class="wrap" id="wrap">
-         <div class="middle"></div>
+         <div class="bg"></div>
          <div class="lwr">
             <h1>LOVE WAS REAL</h1>
          </div>
          <div class="letlo">
             <h2>LETLO VIN</h2>
          </div>
-         
+         <div class="front"></div>
       </div>
-      <div class="front"></div>
+      
    </div>
    <div class="coming-soon">
       <h3>Coming Soon...</h3>
@@ -95,7 +95,7 @@
    <script src="static/tilt.min.js"></script>
    <script>
  VanillaTilt.init(document.querySelector(".wrap"), null, {
-         max: 5, // max tilt rotation (degrees) 
+         max: 15, // max tilt rotation (degrees) 
          perspective: 1000, // Transform perspective,
          speed: 600, // Speed of the enter/exit
          //reverse:true
