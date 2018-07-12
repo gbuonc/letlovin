@@ -49,10 +49,10 @@
       .letlo.letlo{ 
          font-size: 4vw; 
          color: rgba(255,255,255,0.5); 
-         transform: translateZ(80px);
+         transform: translateZ(160px);
       }
       .lwr h1{font-size: 1em; height: 6em; position: relative; left: -1em; }
-      .letlo h2{ font-size: 1em; height: 9em; position: relative; left: 2.9em; color:rgba(62, 28, 10, 0.7);}
+      .letlo h2{ font-size: 1em; height: 9em; position: relative; left: 2.5em; color:rgba(62, 28, 10, 0.7);}
       .coming-soon{
          position: fixed;
          display: flex;
@@ -94,12 +94,12 @@
    </div>
    <script src="static/tilt.min.js"></script>
    <script>
- VanillaTilt.init(document.querySelector(".wrap"), null, {
-         max: 15, // max tilt rotation (degrees) 
-         perspective: 1000, // Transform perspective,
-         speed: 600, // Speed of the enter/exit
-         //reverse:true
-      });
+   VanillaTilt.init(document.querySelector(".wrap"), null, {
+      max: 10, // max tilt rotation (degrees) 
+      perspective: 1000, // Transform perspective,
+      speed: 600, // Speed of the enter/exit
+      //reverse:true
+   });
    </script>
 </body>
 </html>
